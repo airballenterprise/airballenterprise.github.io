@@ -1,0 +1,25 @@
+/*   Color Palette   */
+:root {
+    --outrageous-orange: #ff6d41ff;
+    --cultured: #eff1f3ff;
+    --raisin-black: #211a1dff;
+    --wintergreen-dream: #6b9080ff;
+    --steel-teal: #62929eff;
+}
+
+* {
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+
+p, a, button, label {
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+input[type='radio'] { 
+    transform: scale(2); 
+}

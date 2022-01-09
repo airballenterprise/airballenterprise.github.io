@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoDrones Imaging</title>
+    <link rel="shortcut icon" href="./img/Logo1.png"/>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;600&family=Montserrat:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- 33 26 29 .25 -->
+    <nav id="navbar">
+        <ul> 
+            <li><img src="./img/Logo1.png" alt="logo"></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <!-- two column main section -->
+    <main id="main"> 
+        <div class="video-container">
+            <video autoplay loop muted src="./img/mainBR.mp4" id="mainBR"></video>
+            <div class="caption">
+                <h1>EcoDrones</h1>
+                <h3>Fly your world on a better track.</h3>
+            </div>
+            <button>Learn More</button>
+        </div>
+    </main>
+
+    <!-- transition img -->
+    <div id="transitionContainer">
+        <div class="textContainer">
+            <h1>More than just imaging</h1>
+        </div>
+    </div>
+
+
+    <!-- about -->
+    <section id="about">
+        <div class="left">
+            <img src="./img/Logo1.png" alt="Logo">
+        </div>
+        <div class="right">
+            <div class="rightContent">
+                <h1>About Us</h1>
+                <p>EcoDrones delivers drone services for commercial clients who want to see beyond their own vision. We provide liscened UAV operators
+                    and offer a range of services from real estate videography, agriculture, and construction inspections to 
+                    business development, marketing / PR, and more. </p>
+                <button>See what can we do for you</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- services -->
+    <section id="services">
+        <h1>Services offered</h1>
+        <div class="servicesContainer">
+            <div id="servAgriculture" class="service">
+                <h3>Agriculture</h3>
+               
+            </div>
+            <div id="servResidentialRealEstate" class="service">
+                <h3>Residntial Real Estate</h3>
+                
+            </div>
+            <div id="servCommercialRealEstate" class="service">
+                <h3>Commercial Real Estate</h3>
+                
+            </div>
+            <div id="servInspection" class="service">
+                <h3>Inspection</h3>
+                
+            </div>
+            <div id="servCustom" class="service">
+                <h3>Custom Jobs</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="left">
+            <h1>Contact Us</h1>
+            <h3>See what EcoDrones can do for you</h3>
+        </div>
+        <div class="right">
+            <form action="">
+                <label for="fname">First name:</label>
+                <input type="text" name="fname">
+
+                <label for="lname">Last name:</label>
+                <input type="text" name="lname">
+
+                <label for="email">Email:</label>
+                <input type="text" name="email">
+
+                <label for="phobe">Phone Number:</label>
+                <input type="text" name="phone">
+
+                <div class="services">
+                    <input type="radio" id="selAgriculture" name="service" value="Agriculture">
+                    <label for="selAgriculture">Agriculture</label><br>
+
+                    <input type="radio" id="selResRealEstate" name="service" value="ResidntialRealEstate">
+                    <label for="selResRealEstate">Residential Real Estate</label><br>
+
+                    <input type="radio" id="selComRealEstate" name="service" value="CommericialRealEstate">
+                    <label for="selComRealEstate">Commericial Real Estate</label><br>
+
+                    <input type="radio" id="selInspection" name="service" value="Inspection">
+                    <label for="selInspection">Inspection</label><br>
+                    
+                    <input type="radio" id="selOther" name="service" value="Other">
+                    <label for="selOther">Other</label>
+
+                </div>
+                
+
+                <button>Submit</button>
+
+            </form>
+        </div>
+
+    </section>
+
+    <footer>
+        
+    </footer>
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>

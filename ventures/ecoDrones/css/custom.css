@@ -1,0 +1,373 @@
+main {
+    height: 98vh;
+}
+
+section {
+    height: 80vh;
+}
+
+.hidden {
+    display: none;
+}
+
+.divider {
+    height: 30px;
+    background-color: var(--outrageous-orange);
+    z-index: 2;
+}
+
+/* navbar */
+
+#navbar {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(33,26,29,.8);
+    border-bottom: 3px solid var(--outrageous-orange);
+    top: 0px;
+    z-index: 999;
+}
+
+#navbar ul li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#navbar ul img{
+    height: 70px;
+    margin: 10px;
+}
+
+#navbar ul li a {
+    display: block;
+    color: var(--outrageous-orange);
+    font-size: 1.5em;
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 20px;
+    transition: .3s ease;
+}
+
+#navbar ul li a:hover {
+    background-color: var(--outrageous-orange);
+    color: var(--cultured);
+}
+
+/*   main   */
+
+.video-container {
+    width: 100%;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.video-container .caption {
+    z-index: 1;
+    position: relative;
+    top: 250px;
+    text-align: center;
+    background-color: rgba(33,26,29,.9);
+    border: 4px solid var(--outrageous-orange);
+    padding: 10px;
+    width:50%;
+    margin:auto;
+    border-radius: 20px;
+}
+
+.video-container button {
+    display: block;
+    z-index: 1;
+    text-align: center;
+    background-color: rgba(33,26,29,.9);
+    border: 4px solid var(--outrageous-orange);
+    padding: 10px;
+    width: 35%;
+    margin: auto;
+    border-radius: 20px;
+    color: var(--outrageous-orange);
+
+
+}
+
+.video-container .caption h1 {
+    font-size: 8vw;
+    padding: 15px;
+    margin: auto;
+    color: var(--outrageous-orange);
+}
+
+.video-container .caption h3 {
+    font-size: 3vw;
+    color: var(--cultured);
+    padding: 15px;
+    margin: auto;
+}
+
+/* Transition Image */
+
+#transitionContainer {
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--raisin-black);
+}
+
+#transitionContainer .textContainer {
+    width: 60%;
+    margin: 200px auto;
+    font-size: 2vw;
+    text-align: center;
+    border-radius: 15px;
+    border: 4px solid var(--outrageous-orange);
+    padding: 10px;
+}
+
+#transitionContainer .textContainer p {
+    color: var(--cultured);
+}
+
+#transitionContainer .textContainer h1 {
+    color: var(--outrageous-orange);
+}
+
+
+/* About us */
+
+#about {
+    display: flex;
+    justify-content: center;
+    background-color: var(--cultured);
+}
+
+#about .left {
+    padding: 20px 10px;
+    vertical-align: middle;
+    display: inline-block;
+    min-width: 48%;
+    height: 100%;
+}
+
+#about .left img {
+    animation-name: slidein;
+    animation-duration: .3s;
+    width: 80%;
+    min-width: 300px;
+    margin-top: 10%;
+}
+
+#about .right { 
+    padding: 100px 10px;
+    vertical-align: middle;
+    display: inline-block;
+    min-width: 48%;
+    height: 100%;
+}
+
+#about .right .rightContent {
+    margin-top: 10%;
+    width: 80%;
+    margin-left: 0;
+}
+
+
+#about .right .rightContent button {
+    font-size: 1.4vw;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#about .right .rightContent h1 {
+    font-size: 4vw;
+    color: var(--outrageous-orange);
+    margin-bottom: 20px;
+
+}
+
+#about .right .rightContent p {
+    font-size: 1.4vw;
+    color: var(--raisin-black);
+    margin-bottom: 20px;
+}
+
+
+/* Services */
+#services {
+    background-color: var(--raisin-black);
+    height: auto;
+    padding: 50px 0 120px 0;
+}
+
+#services h1 {
+    font-size: 4vw;
+    color: var(--cultured);
+    width: 50%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+#services .servicesContainer{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+#services .servicesContainer .service{
+    padding: 25px;
+    height: 300px;
+    width: 300px;
+    margin: 30px;
+    border-radius: 15px;
+    transition: .3s ease;
+
+}
+
+#services .servicesContainer .service h3{
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: var(--raisin-black);
+    color: var(--cultured);
+    font-size: 2.2vw;
+
+}
+
+#services .servicesContainer .service:hover {
+    margin: 10px 40px 10px 20px;
+    box-shadow: 10px 5px 15px 5px var(--outrageous-orange);
+    cursor: pointer;
+}
+
+
+#servAgriculture {
+    background-image: url("../img/agriculture.jpg");
+    background-size: 600px;
+    background-repeat: no-repeat;
+}
+
+#servResidentialRealEstate {
+    background-image: url("../img/realEstate.jpg");
+    background-size: 600px;
+    background-repeat: no-repeat;
+
+
+}
+
+
+#servCommercialRealEstate {
+    background-image: url("../img/commercialRealEstate.jpg");
+    background-size: 600px;
+    background-repeat: no-repeat;
+
+
+}
+
+#servInspection {
+    background-image: url("../img/Inspection.jpg");
+    background-size: 600px;
+    background-repeat: no-repeat;
+
+
+}
+
+#servCustom {
+    background-image: url("../img/misc.jpg");
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+
+
+
+
+/* Contact */
+
+#contact {
+     background-color: var(--outrageous-orange);
+     display: flex;
+     justify-content: center;
+     height: auto;
+}
+
+#contact .left {
+    height: 100%;
+    width: 40%;
+    padding: 50px 0;
+}
+
+#contact .left h1 {
+    color: var(--cultured);
+    font-size: 3.4vw;
+    position: relative;
+    top: 150px;
+}
+
+#contact .left h3 {
+    color: var(--cultured);
+    font-size: 2vw;
+    position: relative;
+    top: 180px;
+}
+
+#contact .right {
+    height: 100%;
+    width: 40%;
+    padding: 50px 0;
+}
+
+
+#contact .right form input{
+    display: block;
+    width: 80%;
+    height: 40px;
+    margin: 10px 0 30px 0;
+    font-size: 2vw;
+}
+
+#contact .right form .services input{
+    display: inline;
+    margin: 10px;
+    width: auto;
+    height: auto;
+}
+
+
+#contact .right form .services input:hover{
+    cursor: pointer;
+}
+
+#contact .right form label {
+    color: var(--cultured);
+    font-size: 1.5vw;
+}
+
+#contact .right form button {
+    margin-top: 30px;
+    font-size: 2vw;
+    border-radius: 8px;
+    background-color: var(--cultured);
+    color: var(--raisin-black);
+    padding: 10px 50px;
+}
+
+#contact .right form button:hover{
+    cursor: pointer;
+}
+
+
+/* footer */
+
+footer {
+    background-color: var(--cultured);
+}
