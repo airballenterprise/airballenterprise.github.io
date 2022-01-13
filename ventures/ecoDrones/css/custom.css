@@ -59,7 +59,7 @@ section {
     width: 100%;
 }
 
-.video-container video {
+.video-container img {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -96,14 +96,14 @@ section {
 }
 
 .video-container .caption h1 {
-    font-size: 8vw;
+    font-size: 5vw;
     padding: 15px;
     margin: auto;
     color: var(--outrageous-orange);
 }
 
 .video-container .caption h3 {
-    font-size: 3vw;
+    font-size: 2vw;
     color: var(--cultured);
     padding: 15px;
     margin: auto;
